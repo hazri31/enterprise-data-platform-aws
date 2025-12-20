@@ -9,17 +9,17 @@ Architecture Flow:
 ┌───────────────────────────────────────────────────────────┐
 │                     PRODUCER SYSTEMS                      │
 │  (Applications, Microservices, External Partners, APIs)   │
-└───────────────┬───────────────────────────┬───────────────┘
+└───────────────┬───────────────────────────┬──────────────┘
                 │                           │
         Streaming Events               Batch Data
      (JSON / Avro Events)        (API Pulls / File Drops)
                 │                           │
-┌───────────────▼──────────────┐   ┌────────▼─────────┐
+┌───────────────▼──────────────┐   ┌────────▼────────┐
 │ Amazon Kinesis Data Streams  │   │   Airflow (MWAA) │
 │  - Ordered ingestion         │   │  - Scheduling    │
-│  - Backpressure handling     │   │  - Retries       │
-│  - Spike absorption          │   │  - Dependency    │
-└───────────────┬──────────────┘   └────────┬─────────┘
+│  - Backpressure handling    │   │  - Retries       │
+│  - Spike absorption         │   │  - Dependency mgmt│
+└───────────────┬──────────────┘   └────────┬────────┘
                 │                           │
                 └──────────────┬────────────┘
                                │
@@ -30,9 +30,9 @@ Architecture Flow:
            - Idempotent writes
                                │
         ┌──────────────────────┴──────────────────────┐
-        │                AMAZON S3 LAKEHOUSE          │
-        │            (Apache Iceberg Table Format)    │
-        │                                             │
+        │                AMAZON S3 LAKEHOUSE           │
+        │            (Apache Iceberg Table Format)     │
+        │                                              │
         │   ┌────────────┐  ┌────────────┐  ┌────────┐│
         │   │   BRONZE   │  │   SILVER   │  │  GOLD  ││
         │   │ Raw Events │  │ Clean Data │  │ Marts  ││
