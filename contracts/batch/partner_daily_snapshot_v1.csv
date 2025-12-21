@@ -1,0 +1,5 @@
+snapshot_date,partner_id,product_id,available_quantity,unit_price,currency,last_updated_ts
+2025-01-15,partner_001,SKU-1001,120,19.99,USD,2025-01-15T05:30:00Z
+2025-01-15,partner_001,SKU-1002,0,49.99,USD,2025-01-15T05:31:10Z
+2025-01-15,partner_002,SKU-2001,340,5.49,EUR,2025-01-15T05:28:45Z
+2025-01-15,partner_002,SKU-2002,15,99.00,EUR,2025-01-15T05:29:05Z

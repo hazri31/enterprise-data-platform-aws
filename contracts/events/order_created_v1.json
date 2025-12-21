@@ -1,0 +1,93 @@
+{
+  "event_name": "order_created",
+  "event_version": "v1",
+  "description": "Emitted when a customer successfully places an order.",
+  "producer": "order-service",
+  "ownership": {
+    "team": "commerce-platform",
+    "contact": "commerce-platform@datacorp.internal"
+  },
+  "schema": {
+    "type": "object",
+    "required": [
+      "event_id",
+      "event_time",
+      "order_id",
+      "customer_id",
+      "order_total",
+      "currency",
+      "source_system"
+    ],
+    "properties": {
+      "event_id": {
+        "type": "string",
+        "description": "Globally unique identifier for the event."
+      },
+      "event_time": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Time when the event occurred in the source system (UTC)."
+      },
+      "order_id": {
+        "type": "string",
+        "description": "Unique identifier of the order."
+      },
+      "customer_id": {
+        "type": "string",
+        "description": "Unique identifier of the customer."
+      },
+      "order_total": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Total monetary value of the order."
+      },
+      "currency": {
+        "type": "string",
+        "description": "ISO 4217 currency code."
+      },
+      "source_system": {
+        "type": "string",
+        "description": "System that produced the event."
+      },
+      "items": {
+        "type": "array",
+        "description": "Optional list of items in the order.",
+        "items": {
+          "type": "object",
+          "required": ["sku", "quantity", "unit_price"],
+          "properties": {
+            "sku": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "unit_price": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        }
+      },
+      "metadata": {
+        "type": "object",
+        "description": "Optional metadata for tracing and diagnostics.",
+        "properties": {
+          "trace_id": { "type": "string" },
+          "correlation_id": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false
+  },
+  "compatibility_rules": {
+    "backward_compatible": true,
+    "notes": [
+      "New optional fields may be added.",
+      "Required fields cannot be removed or changed.",
+      "Field types must remain stable across versions."
+    ]
+  }
+}
