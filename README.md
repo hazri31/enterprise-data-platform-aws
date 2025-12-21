@@ -3,3 +3,7 @@ A production-grade, event-driven data platform on AWS supporting batch and strea
 
 This repository contains the design and implementation of a production-grade enterprise data platform built on AWS.
 The platform supports high-volume batch and streaming ingestion, schema-enforced lakehouse storage, data quality guarantees, and operational SLAs, with a strong focus on scalability, reliability, and cost efficiency.
+
+## High-Level Architecture
+
+![Enterprise Data Platform Architecture](architecture/Architecture_highlevel.png)
